@@ -4,16 +4,20 @@ if(isset($_POST['submit'])){
 
 	$Device = $_POST['Device'];
 	$Device = str_replace("'","''", $Device);
-	$Model =$_POST['Model'];
-	$Model = str_replace("'","''", $Model);
+
+	if ($_POST['Model']!="") {
+		$Model =$_POST['Model'];
+		$Model = str_replace("'","''", $Model);
+	}else{
+		$Model = "null";
+	}
 	$Price = $_POST['Price'];
 
 
-	if (isset($_POST['Company'])) {
+	if ($_POST['Company'] !="") {
 		$Company = $_POST['Company'];
 		$Company = str_replace("'","''", $Company);
-	}
-	else {
+	}else {
 		$Company = "null";
 	}
 	if (isset($_POST['Quantity'])) {

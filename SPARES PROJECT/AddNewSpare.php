@@ -77,7 +77,7 @@ if (isset($_SESSION['email'])) {
 				<input type="text" id="company" name="Company" class="form-control" style="width: 50%;">
 				<br><br>
 				<label for="model">Model Name:</label>
-				<input type="text" id="model" name="Model" class="form-control" style="width: 50%;" required>
+				<input type="text" id="model" name="Model" class="form-control" style="width: 50%;">
 				<br><br>
 				<label for="quantity">Initial Quantity:</label>
 				<input type="text" id="quantity" name="Quantity" class="form-control" style="width: 50%;" required=""><br>
